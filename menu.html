@@ -4,66 +4,67 @@
         <meta charset="UTF-8">
         <title>Menu</title>
         
-        <style>
-          html { background-color:white }
+        <link rel="stylesheet" href="css/style.css"/>
+        <link rel="stylesheet" href="css/normalize.css"/>
           
-          main { width:955px; margin:-1px auto 10px; border:1px solid azure; 
-              background-color:#FFF; font-family:Arial, Helvetica, sans-serif }
-          
-          header { width:955px; height:95px }
-          
-          nav { width: 955px; background-color: #4a808d }
-          nav ul { list-style:none; margin:0; padding:4px }
-          nav ul li { display:inline-block }
-          nav ul li a { font-size: 0.85em; text-decoration: none; color: azure; padding: 4px 20px }
-          nav ul li a:hover { background-color: #000000 }
-          nav ul li a:hover{border-radius: 50px;}
-          
-          
-          article { float:left; margin:30px 20px; width:900px }
-          
-          #apoio { float:right; width:300px; margin-top:30px }
-
-          footer { clear:both; width:700px; margin:0 auto; font-size:0.75em; text-align:center; background-color:#c7b5b5; padding:5px }
-          
-          h1, h4 { font-family:Georgia, "Times New Roman", Times, serif; color:#C63; font-style:italic; letter-spacing:-0.05em }
-          h1 { font-size:2.6em; margin:0 5px; }
-          h4 { font-size:1.6em; margin:0 5px; }
-          p, li { font-family:"Trebuchet MS", Arial, Helvetica, sans-serif; font-size:0.9em; color:rgb(65, 63, 63); line-height:1.8 }
-
-      </style> 
-       
 	</head>
-
-    
     <body>
-        <main>
-            <nav>
-                <ul>
+              <nav>
+                <ul id="nav-container">
                   <li><a href="index.html">Página principal</a></li>
-                    <li><a href="menu.html">Menu</a></li>
+                  <li><a href="/restaurant.html">Menu</a></li>
+                  <li><a href="/menu.html">Cardápio</a></li>
                   <li><a href="Eventos-Especiais.html">Fotos</a></li>
-            </nav>
-
-            <article>
+               
+              </nav>
                 
-                <header>
-                    <h1>Menu</h1>
-                </header>
+                <article >
+                  <div class="container">
+                      <header class="header" style="margin-left: 200px;">
+                            <a href="index.html" class="logo">
+                                <img src="img/icon/logo.svg" alt="Logo"/>
+                             </a>
+                            <label class="address">
+                            <input type="text" class="input input-address" placeholder="Buscar..."/>
+                            </label>
+                            <div class="buttons">
+                            <button class="button button-primary button-auth">
+                              <span class="button-auth-svg"></span>
+                              <span class="button-text">Entrar</span>
+                            </button>
+                            <button class="button" id="cart-button">
+                              <span class="button-cart-svg"></span>
+                              <span class="button-text">Carrinho</span>
+                            </button>
+                            </div>
+                       </header>
+                    </div>
+                    <div class="section-heading">
+                      <h2 class="section-title restaurant-title" style="padding-bottom: 10px; margin-left: 40px;">Versão Brasileira</h2>
+                          <div class="card-info">
+                           <div class="rating" style="margin-bottom: 10px;">
+                             4.5
+                            </div>
+                           </div>    
+                     </div>
+               </article>            
                 
-                <h4>Petiscos</h4>
-                <p><img src="imagens/Entrada.jpg" width="475" height="300" alt=""/></p>
-                <ul>
-                  <li>Iscas de tilápia empanadas. Acompanha batatas rústicas, temperadas com páprica defumada, pimenta do reino e molho especial de ervas. (Serve de 2 a 3 pessoas)</li>
+              <article>
+                <h4 style="margin-left: 555px; padding: 40px;">Petiscos</h4>
+                <p style="margin-left: 380px;"><img src="imagens/Entrada.jpg" width="575" height="300" alt=""/></p>
+                <ul style="text-align: justify; margin-left: 360px; width: 600px;">
+                  
+                  <li> Iscas de tilápia empanadas. Acompanha batatas rústicas, temperadas com páprica defumada, pimenta do reino e molho especial de ervas. (Serve de 2 a 3 pessoas)</li>
                   <li>Iscas de frango empanadas. Acompanha geleia de pimenta. (Serve de 2 a 3 pessoas)</li>
                   <li>Frango frito temperado com ervas finas e alho. Acompanha molho barbecue. (Serve de 2 a 3 pessoas)</li>
                   <li>Carne de sol na chapa com mandioca. Acompanha manteiga de garrafa. (Serve de 2 a 3 pessoas) </li>
                   <li>Fritas com cheddar e bacon.<br>
                   </li>
                 </ul>
-                <h4>Entradas</h4>
-                <p><img src="imagens/entrada1.jpg" width="475" height="300" alt=""/></p>
-                <ul>
+                <h4 style="margin-left: 555px; padding: 50px;">Entradas</h4>
+                <p style="margin-left: 380px;"><img src="imagens/entrada1.jpg" width="575" height="300" alt=""/></p>
+
+                <ul style="text-align: justify; margin-left: 360px; width: 600px;">
                   <li>Suculenta carne empanada com farinha panko, molho sugo da casa, coberta com muçarela gratinada.</li>
                   <li>Espetinho de filé de frango grelhado de 180g. Acompanha farofa de ovos, vinagrete e mandioca cozida. </li>
                   <li>Picanha na chapa. Acompanha molho vinagrete, farofa, cebola e pão de alho. (Serve de 2 a 3 pessoas)</li>
@@ -72,9 +73,10 @@
                   </li>
                   <li>Tradicional Brochete VB com 180g de coração da alcatra prime, entrelaçadas com finas fatias de bacon. Acompanha farofa de ovos, vinagrete e mandioca cozida.</li>
                 </ul>
-                <h4>Refeições</h4>
-                <p><img src="imagens/Refeições.jpg" width="475" height="300" alt=""/></p>
-                <ul>
+
+                <h4 style="margin-left: 555px; padding: 50px;">Refeições</h4>
+                <p style="margin-left: 380px;"><img src="imagens/Refeições.jpg" width="575" height="300" alt=""/></p>
+                <ul style="text-align: justify; margin-left: 360px; width: 600px;">
                   <li>Filé de frango ao molho pomodoro e muçarela gratinada. Acompanha de arroz branco e Batata rustica ou palito.. </li>
                   <li>Strogonoff de carne com champignon. Acompanha arroz branco e batata palha. </li>
                   <li>Picadinho de filé ao molho rôti com champignon. Acompanha arroz branco, farofa crocante, ovo pochê e banana à milanesa. </li>
@@ -82,14 +84,13 @@
                   <li>Picanha Grelhada 180g. Acompanha farofa de ovos, vinagrete, arroz branco e mandioca cozida.</li>
                   <li>Feijoada completa. Acompanha farofa, arroz, couve refogada, torresmo e laranja. </li>
                 </ul>
-                <h4>Bebidas</h4>
-                <img src="imagens/bebida.jpg" width="202" height="300">
-                <img src="imagens/corona.jpg" width="202" height="300" alt="">
-                <img src="imagens/estella.jpg" width="202" height="300" alt="">
-                <img src="imagens/redbull.jpg" width="202" height="300" alt="">
+                <h4 style="margin-left: 555px; padding: 50px;">Bebidas</h4>
+                
+                <p style="margin-left: 380px;"><img src="imagens/vinhhos.jpg" width="575" height="300"></p>
+            
                 
                 
-                <ul>
+                <ul style="text-align: justify; margin-left: 360px;">
                   <li>SKOL SENSES LONG NECK</li>
                   <li>CERVEJA CORONA EXTRA LONG NECK</li>
                   <li>CERVEJA STELLA ARTOIS LONG NECK</li>
@@ -97,20 +98,38 @@
                   <li>ENERGÉTICO RED BULL TRADICIONAL 250 ML</li>
                   <li>CERVEJA BUDWEISER LONG NECK</li>
                 </ul>
-            </article>
-          
-                    <h4>Vinhos</h4>
+                
+               </article> 
+
+                <article style="margin-left: 265px;">  
+                  <h4 style="padding: 70px; margin-left: 295px; padding-bottom: 90px;">Vinhos</h4>
                     <img src="imagens/vin1.jpg" width="275" height="203" /> 
                     <img src="imagens/vin2.jpg" width="275" height="203" /> 
                     <img src="imagens/vin3.jpg" width="275" height="203" /> 
-                    <img src="imagens/vin4.jpg" width="275" height="203" />    
-         
-            
-            <footer>
-              <p>CLS, SHCS 204, Shigs, 713 - Bl. A, Lj 02 - Asa Sul, Brasília - DF, 70234-510</p>
-                
-            </footer>
-            
+                    <img src="imagens/vin4.jpg" width="275" height="203" />  
+                    <img src="imagens/vin5.jpg" width="275" height="203" />    
+                    <img src="imagens/vin6.jpg" width="275" height="203" /> 
+                  
+                </article>
+                 
+                    <footer class="footer">
+                      <div class="container" >
+                        <div class="footer-block">
+                          <img src="img/icon/logo.svg" alt="logo" class="logo footer-logo"/>
+                            
+                            <p>CLS, SHCS 204, Shigs, 713 - Bl. A, Lj 02 - Asa Sul, Brasília - DF, 70234-510</p>
+                        
+                          <div class="social-links">
+                            <a href="https://www.instagram.com/vb_versaobrasileira/?hl=pt-br" target="blank" class="social-link"><img src="img/social/instagram.svg" alt="instagram"/></a>
+                            <a href="https://www.facebook.com/VersaoBrasileiraBarRestaurante" target="blank" class="social-link"><img src="img/social/fb.svg" alt="facebook"/></a>
+                            <a href="#" class="social-link"><img src="img/social/vk.svg" alt="vk"/></a>
+                          </div>
+                          
+                        </div>
+                        
+                      </div>
+                    </footer>
+               
         </main>
 		
     </body>
